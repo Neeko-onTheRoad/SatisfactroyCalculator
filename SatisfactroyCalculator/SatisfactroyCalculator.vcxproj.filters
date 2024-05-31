@@ -13,5 +13,51 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="소스 파일\SatisfactoryElements">
+      <UniqueIdentifier>{fda759f9-3358-41f7-babf-d88aa3580a12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\SatisfactoryElements">
+      <UniqueIdentifier>{63b2fd45-74b6-4019-b652-07e5e5a60015}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Resources">
+      <UniqueIdentifier>{543d6370-c27c-4f3f-b682-ccd23d4b8c1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Resources">
+      <UniqueIdentifier>{4e6553cf-dbe1-4318-972c-18148d40c77f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="리소스 파일\Items">
+      <UniqueIdentifier>{3254be75-f8b7-4ff3-a968-059155ec3a15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Item.Cxx">
+      <Filter>소스 파일\SatisfactoryElements</Filter>
+    </ClCompile>
+    <ClCompile Include="Building.Cxx">
+      <Filter>소스 파일\SatisfactoryElements</Filter>
+    </ClCompile>
+    <ClCompile Include="Recipe.Cxx">
+      <Filter>소스 파일\SatisfactoryElements</Filter>
+    </ClCompile>
+    <ClCompile Include="ResourceManager.Cxx">
+      <Filter>소스 파일\Resources</Filter>
+    </ClCompile>
+    <ClCompile Include="Index.Cxx">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Building.Hxx">
+      <Filter>헤더 파일\SatisfactoryElements</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.Hxx">
+      <Filter>헤더 파일\SatisfactoryElements</Filter>
+    </ClInclude>
+    <ClInclude Include="Recipe.Hxx">
+      <Filter>헤더 파일\SatisfactoryElements</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager.Hxx">
+      <Filter>헤더 파일\Resources</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
