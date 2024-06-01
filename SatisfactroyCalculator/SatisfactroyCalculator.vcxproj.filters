@@ -28,6 +28,15 @@
     <Filter Include="리소스 파일\Items">
       <UniqueIdentifier>{3254be75-f8b7-4ff3-a968-059155ec3a15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="리소스 파일\Items\Ores">
+      <UniqueIdentifier>{4774db91-78f4-40cb-96c3-d5e552be1021}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Client">
+      <UniqueIdentifier>{921992fc-8bae-4551-83c1-247e2a75d1d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Client">
+      <UniqueIdentifier>{f1580a49-caae-49ec-8b80-866c124e2bef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Item.Cxx">
@@ -45,6 +54,9 @@
     <ClCompile Include="Index.Cxx">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="WindowBase.Cxx">
+      <Filter>소스 파일\Client</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Building.Hxx">
@@ -59,5 +71,40 @@
     <ClInclude Include="ResourceManager.Hxx">
       <Filter>헤더 파일\Resources</Filter>
     </ClInclude>
+    <ClInclude Include="WindowBase.Hxx">
+      <Filter>헤더 파일\Client</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Textures\Items\Bauxite.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\CateriumOre.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\Coal.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\CopperOre.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\IronOre.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\Limestone.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\RawQuartz.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\S.A.M. Ore.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\Sulfur.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
+    <Image Include="res\Textures\Items\Uranium.png">
+      <Filter>리소스 파일\Items\Ores</Filter>
+    </Image>
   </ItemGroup>
 </Project>

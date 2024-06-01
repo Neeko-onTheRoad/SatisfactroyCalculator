@@ -10,16 +10,27 @@ using namespace std;
 
 namespace sfc {
 
-	namespace Resources {
-		namespace Textures {
-			namespace Items {
-				static const Texture* Limestone = new Texture(".\\res\\Textures\\Items\\Limestone.png");
-			}
+	static class Resources {
+	public:
+		static void Init();
+		
+		static class Textures {
+		public:
 
-		}
+			static class Items {
+			public:
 
-	}
+				static class Ores {
+				public:
 
+					static Texture LimeStone;
+					static Texture IronOre;
+					static Texture CopperOre;
+
+				};
+			};
+		};
+	};
 }
 
 
