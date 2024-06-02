@@ -3,15 +3,16 @@
 #ifndef _ITEM_HXX_
 #define _ITEM_HXX_
 
-#include <SFML/Graphics.hpp>
-
 #include <set>
+#include <SFML/Graphics.hpp>
 
 using namespace sf;
 using namespace std;
 using namespace sfc;
 
 namespace sfc {
+
+//=================================================================================================| Extern Classes
 	
 	extern class Building; 
 	extern class Recipe;
@@ -19,45 +20,49 @@ namespace sfc {
 
 	class Item {
 
-	private:
+//=================================================================================================| Status & Flags
 
-		string         displayName;
-		vector<string> description;
-		unsigned short stackSize;
-		unsigned short sinkPoint;
+		private: string         displayName;
+		private: vector<string> description;
+		private: unsigned short stackSize;
+		private: unsigned short sinkPoint;
 
-		Sprite itemSprite;
+		private: Sprite itemSprite;	
 
-		set<const Recipe*> recipes;
-		set<const Recipe*> altRecipes;
-		set<const Recipe*> usages;
-		set<const Recipe*> altUsages;
+		private: set<const Recipe*> recipes;
+		private: set<const Recipe*> altRecipes;
+		private: set<const Recipe*> usages;
+		private: set<const Recipe*> altUsages;
 
+//=================================================================================================| Getters
+		
+		public: const string*         GetDisplayName();
+		public: const vector<string>* GetDiscription();
+		public: const unsigned short* GetStackSize();
+		public: const unsigned short* GetSinkPoint();
 
-	
-	public:
+		public: const set<const Recipe*>* GetRecipes();
+		public: const set<const Recipe*>* GetAltRecipes();
+		public: const set<const Recipe*>* GetAllRecipes();
 
-		Item(
+		public: const set<const Recipe*>* GetUsages();
+		public: const set<const Recipe*>* GetAltUsages();
+		public: const set<const Recipe*>* GetAllUsages();
+
+//=================================================================================================| Constructor
+
+		public: Item(
 			string         _displayName,
 			vector<string> _description,
 			unsigned short _stackSize,
 			unsigned short _sinkPoint,
 			Sprite         _itemSprite
 		);
+
+//=================================================================================================| Methods
+
 		
-		const string&         GetDisplayName();
-		const vector<string>& GetDiscription();
-		const unsigned short& GetStackSize();
-		const unsigned short& GetSinkPoint();
-
-		const set<const Recipe*>& GetRecipes();
-		const set<const Recipe*>& GetAltRecipes();
-		const set<const Recipe*>& GetAllRecipes();
-
-		const set<const Recipe*>& GetUsages();
-		const set<const Recipe*>& GetAltUsages();
-		const set<const Recipe*>& GetAllUsages();
-
+		
 
 	};
 

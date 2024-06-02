@@ -57,6 +57,9 @@
     <ClCompile Include="WindowBase.Cxx">
       <Filter>소스 파일\Client</Filter>
     </ClCompile>
+    <ClCompile Include="ClientTime.Cxx">
+      <Filter>소스 파일\Client</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Building.Hxx">
@@ -73,6 +76,12 @@
     </ClInclude>
     <ClInclude Include="WindowBase.Hxx">
       <Filter>헤더 파일\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientTime.Hxx">
+      <Filter>헤더 파일\Client</Filter>
+    </ClInclude>
+    <ClInclude Include="IDrawable.Hxx">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -106,5 +115,10 @@
     <Image Include="res\Textures\Items\Uranium.png">
       <Filter>리소스 파일\Items\Ores</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SceneBase.Hxx">
+      <Filter>헤더 파일\Client</Filter>
+    </None>
   </ItemGroup>
 </Project>

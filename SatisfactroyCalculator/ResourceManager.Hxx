@@ -11,21 +11,15 @@ using namespace std;
 namespace sfc {
 
 	static class Resources {
-	public:
-		static void Init();
+		public: static void Init();
 		
-		static class Textures {
-		public:
+		public: static class Textures {
+			public: static class Items {
+				public: static class Ores {
 
-			static class Items {
-			public:
-
-				static class Ores {
-				public:
-
-					static Texture LimeStone;
-					static Texture IronOre;
-					static Texture CopperOre;
+					public: static Texture LimeStone;
+					public: static Texture IronOre;
+					public: static Texture CopperOre;
 
 				};
 			};
