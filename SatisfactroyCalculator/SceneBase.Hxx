@@ -7,25 +7,37 @@
 #include <functional>
 #include <SFML/Graphics.hpp>
 
-#include "ClientTime.Hxx"
-
 using namespace sf;
 using namespace std;
 
 namespace sfc {
 	namespace Client {
 
-		class SceneBase {
+//=================================================================================================| Extern Classes
+
+		class ClientTime;
+
+
+		class SceneBase : Drawable {
+
+//=================================================================================================| Virtual Functions
+
+			protected: virtual void Initialize();
+			protected: virtual void Update();
+
+//=================================================================================================| Functions
+
+			public: void InitializeBase();
+			public: void UpdateBase();
+
+//=================================================================================================| Elements
 
 			private: vector<Drawable>                   objects;
 			private: vector<function<void(ClientTime)>> updates;
 
-			private: void InitializeBase();
-			private: void UpdateBase();
-			
-			protected: virtual void Initialize();
-			protected: virtual void Update();
+//=================================================================================================| Overrided Functions
 
+			public: void Drawable::draw(RenderTarget& _target, RenderStates _states) const;
 
 
 

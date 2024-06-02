@@ -14,8 +14,8 @@ namespace sfc {
 
 //=================================================================================================| Extern Classes
 	
-	extern class Building; 
-	extern class Recipe;
+	class Building; 
+	class Recipe;
 
 
 	class Item {

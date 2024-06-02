@@ -24,7 +24,8 @@ const RenderWindow* Client::WindowBase::GetWindow() {
 	return this->window;
 }
 
-const ClientTime* Client::WindowBase::GetClientTime() {
-	return this->clientTime;
+const ClientTime* Client::WindowBase::GetClientTime()
+{
+	return nullptr;
 }
 

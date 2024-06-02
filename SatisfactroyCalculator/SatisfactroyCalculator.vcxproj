@@ -139,15 +139,16 @@
     <ClCompile Include="Item.Cxx" />
     <ClCompile Include="Recipe.Cxx" />
     <ClCompile Include="ResourceManager.Cxx" />
+    <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="WindowBase.Cxx" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Building.Hxx" />
     <ClInclude Include="ClientTime.Hxx" />
-    <ClInclude Include="IDrawable.Hxx" />
     <ClInclude Include="Item.Hxx" />
     <ClInclude Include="Recipe.Hxx" />
     <ClInclude Include="ResourceManager.Hxx" />
+    <ClInclude Include="UpdatingDrawable.Hxx" />
     <ClInclude Include="WindowBase.Hxx" />
   </ItemGroup>
   <ItemGroup>
